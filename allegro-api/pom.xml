@@ -21,7 +21,7 @@
   <parent>
     <groupId>com.symphony.oss.allegro</groupId>
     <artifactId>oss-allegro</artifactId>
-    <version>0.5.25-SNAPSHOT</version>
+    <version>0.5.26-SNAPSHOT</version>
   </parent>
   <artifactId>allegro-api</artifactId>
     
@@ -33,6 +33,17 @@
   </repositories>
   
   <dependencies>
+  
+    
+  
+    <!--  version introduced by aws has security vulnerabilities -->
+    <dependency>
+      <groupId>com.fasterxml.jackson.dataformat</groupId>
+      <artifactId>jackson-dataformat-cbor</artifactId>
+      <version>${jackson.version}</version>
+   </dependency>
+  
+  
     <dependency>
       <groupId>com.symphony.oss.commons</groupId>
       <artifactId>commons-core</artifactId>
